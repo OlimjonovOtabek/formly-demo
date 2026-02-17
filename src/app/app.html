@@ -1,1 +1,22 @@
-<router-outlet />
+<div class="min-h-screen bg-background text-foreground flex flex-col">
+  <nav class="border-b border-border bg-card/95 text-foreground shadow-sm overflow-auto">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex h-16 items-center justify-between gap-4">
+        <div class="flex items-center gap-8">
+          <h1 class="text-xl font-semibold tracking-tight text-primary">FORMLY-DEMO</h1>
+        </div>
+        <app-theme-toggle />
+      </div>
+    </div>
+  </nav>
+
+  <main class="grow p-6">
+    <div class="max-w-7xl mx-auto">
+      <router-outlet />
+    </div>
+  </main>
+
+  <footer class="border-t border-border p-4 text-center text-xs text-muted-foreground">
+    Angular {{ version() }}
+  </footer>
+</div>

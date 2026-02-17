@@ -3,6 +3,7 @@ import { provideRouter } from '@angular/router';
 import Aura from '@primeuix/themes/aura';
 import { providePrimeNG } from 'primeng/config';
 import { routes } from './app.routes';
+import NoraTailwindPreset from './nora-tailwind-preset';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -11,7 +12,7 @@ export const appConfig: ApplicationConfig = {
     providePrimeNG({
       ripple: true,
       theme: {
-        preset: Aura,
+        preset: NoraTailwindPreset,
         options: {
           prefix: 'p',
           darkModeSelector: '.layout-dark',
